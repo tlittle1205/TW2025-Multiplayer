@@ -1,25 +1,5 @@
 {
-  "player-7": {
-    "sector": 1,
-    "credits": 1000,
-    "holds": 100,
-    "cargo": {
-      "fuel": 0,
-      "ore": 0,
-      "equipment": 0
-    }
-  },
-  "player-8": {
-    "sector": 1,
-    "credits": 1000,
-    "holds": 100,
-    "cargo": {
-      "fuel": 0,
-      "ore": 0,
-      "equipment": 0
-    }
-  },
-  "player-9": {
+  "player-1": {
     "sector": 2,
     "credits": 1000,
     "holds": 100,
@@ -27,6 +7,9 @@
       "fuel": 0,
       "ore": 0,
       "equipment": 0
-    }
+    },
+    "hull": 100,
+    "shields": 10,
+    "bank": 0
   }
 }

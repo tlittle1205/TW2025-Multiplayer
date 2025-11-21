@@ -1,271 +1,338 @@
-# galaxy.py
+# game/world/galaxy.py
+"""
+Galaxy generation and management for TradeWars 2025.
+
+The galaxy consists of interconnected sectors with various features:
+- Warp routes connecting sectors
+- Trading ports with commodity markets
+- Stardock (Celestial Bazaar) in sector 2
+- Future: planets, anomalies, NPCs
+"""
+
 import random
+from typing import Dict, Optional, Any
 from game.world.port import Port
-from game.world.planet import Planet
 
 
+# ============================================================
+# SECTOR
+# ============================================================
 
 class Sector:
     """
-    A sector is a node in the galaxy map.
-    Each sector has:
-    - id
-    - name
-    - neighbors (warp lanes)
-    - optional port
-    - optional planet
-    - type (STARDOCK, FEDSPACE, PIRATE, DEADEND, NORMAL)
-    - has_pirates flag
+    Represents a single sector in the galaxy.
+    
+    Attributes:
+        id: Unique sector identifier
+        neighbors: List of adjacent sector IDs (warp routes)
+        port: Trading port instance (if present)
+        planet: Planet data (future expansion)
+        is_stardock: Whether this sector contains a stardock
     """
-
-    def __init__(self, sid):
-        self.id = sid
-        self.name = f"Sector {sid}"
-        self.neighbors = set()
+    
+    def __init__(self, sector_id: int):
+        """
+        Initialize a new sector.
+        
+        Args:
+            sector_id: Unique identifier for this sector
+        """
+        self.id = sector_id
+        self.neighbors = []
         self.port = None
         self.planet = None
-        self.type = "NORMAL"   # always defined
-        self.has_pirates = False
+        self.is_stardock = False
 
+    def to_dict(self) -> Dict[str, Any]:
+        """
+        Serialize sector to dictionary for saving.
+        
+        Returns:
+            Dictionary representation of sector state
+        """
+        return {
+            "id": self.id,
+            "neighbors": self.neighbors,
+            "port": self.port.to_dict() if self.port else None,
+            "planet": self.planet,
+            "stardock": self.is_stardock,
+        }
+
+    @staticmethod
+    def from_dict(sec_data: dict, sector_obj: "Sector") -> "Sector":
+        """
+        Restore a sector object from saved data.
+        
+        Args:
+            sec_data: Saved sector data dictionary
+            sector_obj: Sector object to populate
+            
+        Returns:
+            Populated sector object
+        """
+        # Validate input
+        if not isinstance(sec_data, dict):
+            raise ValueError("Sector data must be a dictionary")
+        
+        # Restore neighbors (warp routes)
+        if "neighbors" in sec_data:
+            if isinstance(sec_data["neighbors"], list):
+                sector_obj.neighbors = sec_data["neighbors"]
+            else:
+                sector_obj.neighbors = []
+
+        # Restore planets (future expansion)
+        if "planet" in sec_data:
+            sector_obj.planet = sec_data["planet"]
+
+        # Restore ports
+        if sec_data.get("port"):
+            try:
+                sector_obj.port = Port.from_dict(sec_data["port"])
+            except Exception as e:
+                print(f"[WARNING] Failed to load port in sector {sector_obj.id}: {e}")
+                sector_obj.port = None
+
+        # Restore stardock flag - ensure boolean conversion
+        sector_obj.is_stardock = bool(sec_data.get("stardock", False))
+
+        return sector_obj
+
+
+# ============================================================
+# GALAXY
+# ============================================================
 
 class Galaxy:
     """
-    Generates a TradeWars-style galaxy.
+    Manages the entire galaxy of interconnected sectors.
+    
+    Attributes:
+        size: Total number of sectors
+        sectors: Dictionary mapping sector ID to Sector object
     """
-
-    START_SECTOR = 1   # ← ADD THIS LINE
-
-    def __init__(self, num_sectors=100):
-        self.num_sectors = num_sectors
-        self.sectors = {}
-
-        self._create_sectors()
-        self._generate_base_ring()
-        self._add_random_links()
-        self._assign_special_sectors()
-        self._generate_ports_and_planets()
-
-    # ----------------------------------------------------------
-    # Creation & Base Structure
-    # ----------------------------------------------------------
-
-    def _create_sectors(self):
-        for sid in range(1, self.num_sectors + 1):
-            self.sectors[sid] = Sector(sid)
-
-    def _generate_base_ring(self):
-        """Create a circular backbone ensuring the galaxy is connected."""
-        for sid in range(1, self.num_sectors + 1):
-            next_sid = sid + 1 if sid < self.num_sectors else 1
-            self.sectors[sid].neighbors.add(next_sid)
-            self.sectors[next_sid].neighbors.add(sid)
-
-    def _add_random_links(self):
-        """Add random connections for better navigation variety."""
-        extra_links = max(3, self.num_sectors // 6)
-
-        for _ in range(extra_links):
-            a = random.randint(1, self.num_sectors)
-            b = random.randint(1, self.num_sectors)
-            if a != b:
-                self.sectors[a].neighbors.add(b)
-                self.sectors[b].neighbors.add(a)
-
-    # ----------------------------------------------------------
-    # Special Sector Assignment
-    # ----------------------------------------------------------
-
-    def _assign_special_sectors(self):
+    
+    def __init__(self, size: int = 200):
         """
-        TW-style logical layout:
-        - Sectors 1–5 = FedSpace (safe zone)
-        - Sector 3 = Stardock
-        - Random Pirate sectors
-        - Random Dead-end sectors
+        Initialize a new galaxy or restore from saved data.
+        
+        Args:
+            size: Number of sectors in the galaxy (default: 200)
         """
-
-        # FEDSPACE: Sectors 1 through 5
-        for sid in range(1, min(6, self.num_sectors + 1)):
-            self.sectors[sid].type = "FEDSPACE"
-
-        # STARDOCK placed at sector 3 (classic TW location)
-        if 3 <= self.num_sectors:
-            self.sectors[3].type = "STARDOCK"
-
-        # PIRATE sectors: about 10% of map, avoid FedSpace
-        pirate_count = max(2, self.num_sectors // 12)
-        pirate_candidates = [
-            sid for sid in self.sectors.keys()
-            if self.sectors[sid].type == "NORMAL"
-        ]
-        random.shuffle(pirate_candidates)
-        for sid in pirate_candidates[:pirate_count]:
-            sec = self.sectors[sid]
-            sec.type = "PIRATE"
-            sec.has_pirates = True
-
-        # DEADEND sectors: sectors with only 1 connection
-        for sid, sec in self.sectors.items():
-            if len(sec.neighbors) == 1 and sec.type == "NORMAL":
-                sec.type = "DEADEND"
-
-    # ----------------------------------------------------------
-    # Ports & Planets
-    # ----------------------------------------------------------
-
-    def _generate_ports_and_planets(self):
-        """
-        Assign ports and planets based on probabilities.
-        Stardock never gets a port.
-        """
-        for sid, sector in self.sectors.items():
-
-            # Skip Stardock (you can also skip FedSpace if you want)
-            if sector.type == "STARDOCK":
-                continue
-
-            # 40% chance sector has a port
-            if random.random() < 0.4:
-                sector.port = Port()
-
-            # 20% chance sector has a planet
-            if random.random() < 0.2:
-                sector.planet = Planet(sector.id)
-
-    # ----------------------------------------------------------
-    # Save/Load Support
-    # ----------------------------------------------------------
-
-    def to_dict(self):
-        return {
-            "num_sectors": self.num_sectors,
-            "sectors": {
-                sid: {
-                    "id": sec.id,
-                    "neighbors": list(sec.neighbors),
-                    "type": sec.type,
-                    "has_pirates": sec.has_pirates,
-                    "port": sec.port.to_dict() if sec.port else None,
-                    "planet": sec.planet.to_dict() if sec.planet else None,
-                }
-                for sid, sec in self.sectors.items()
-            }
+        self.size = size
+        self.sectors: Dict[int, Sector] = {
+            i: Sector(i) for i in range(1, size + 1)
         }
 
-    # ----------------------------------------------------------
-    # Sector Lookup Helper (TW25Game depends on this)
-    # ----------------------------------------------------------
-    def get_sector(self, sid):
-        return self.sectors.get(sid)
-       
-    # ----------------------------------------------------------
-    # Multiplayer helpers
-    # ----------------------------------------------------------
+        # ALWAYS place stardock in sector 2 BEFORE generating ports
+        if 2 in self.sectors:
+            self.sectors[2].is_stardock = True
+            print(f"[GALAXY] Stardock initialized in sector 2")
 
-    def sector_exists(self, sid: int) -> bool:
-        """Return True if a sector ID exists in the galaxy."""
-        return sid in self.sectors
+        self.generate_warps()
+        self.generate_ports()
 
-    def is_adjacent(self, current: int, requested: int) -> bool:
-        """Validate a legal warp lane between sectors."""
-        if current not in self.sectors:
-            return False
-        return requested in self.sectors[current].neighbors
+        # Double-check sector 2 doesn't have a port (stardock exclusive)
+        if 2 in self.sectors:
+            if self.sectors[2].port is not None:
+                print(f"[WARNING] Removing port from stardock sector 2")
+                self.sectors[2].port = None
 
-    def serialize_sector(self, sid: int) -> dict:
-        """Return a dictionary representation of a sector for network transmission."""
-        sec = self.sectors[sid]
+    # ------------------------------------------------------------
+    # Warp links generation
+    # ------------------------------------------------------------
+
+    def generate_warps(self) -> None:
+        """
+        Generate warp route connections between sectors.
+        
+        Each sector gets 2-4 random warp connections to other sectors,
+        creating a connected graph for navigation.
+        """
+        for i in range(1, self.size + 1):
+            warp_count = random.randint(2, 4)
+            
+            # Select random destinations (excluding self)
+            possible_destinations = [x for x in range(1, self.size + 1) if x != i]
+            choices = random.sample(possible_destinations, min(warp_count, len(possible_destinations)))
+            
+            self.sectors[i].neighbors = choices
+
+    # ------------------------------------------------------------
+    # Port generation
+    # ------------------------------------------------------------
+
+    def generate_ports(self) -> None:
+        """
+        Generate trading ports throughout the galaxy.
+        
+        Places ports in approximately 20% of sectors (size // 5).
+        Sector 2 is excluded as it contains the stardock.
+        """
+        port_count = max(1, self.size // 5)  # At least 1 port
+        
+        # Select random sectors for ports (excluding sector 2 - stardock)
+        available_sectors = [s for s in range(1, self.size + 1) if s != 2]
+        choices = random.sample(available_sectors, min(port_count, len(available_sectors)))
+
+        for sid in choices:
+            self.sectors[sid].port = Port()
+
+    # ------------------------------------------------------------
+    # Serialization
+    # ------------------------------------------------------------
+
+    def to_dict(self) -> Dict[str, Any]:
+        """
+        Serialize entire galaxy to dictionary for saving.
+        
+        Returns:
+            Dictionary containing galaxy size and all sector data
+        """
         return {
-            "id": sec.id,
-            "neighbors": list(sec.neighbors),
-            "type": sec.type,
-            "has_pirates": sec.has_pirates,
-            "port": sec.port.to_dict() if sec.port else None,
-            "planet": sec.planet.to_dict() if sec.planet else None,
+            "size": self.size,
+            "sectors": {sid: s.to_dict() for sid, s in self.sectors.items()}
         }
-
-
-    # ----------------------------------------------------------
-    # Shortest Distance Between Two Sectors (Breadth-First Search)
-    # ----------------------------------------------------------
-    def shortest_distance(self, start, goal):
-        """
-        Returns the shortest number of hops between two sectors.
-        Uses BFS since the map is an unweighted graph.
-        """
-        if start == goal:
-            return 0
-
-        visited = set()
-        queue = [(start, 0)]  # (sector, distance)
-
-        while queue:
-            current, dist = queue.pop(0)
-
-            if current == goal:
-                return dist
-
-            visited.add(current)
-
-            for neighbor in self.sectors[current].neighbors:
-                if neighbor not in visited:
-                    queue.append((neighbor, dist + 1))
-
-        return None
-
-    # ----------------------------------------------------------
-    # Shortest Path Between Two Sectors (BFS)
-    # ----------------------------------------------------------
-    def shortest_path(self, start, goal):
-        """
-        Returns the actual shortest path between two sectors as a list.
-        Example: [1, 5, 9, 12]
-        """
-        if start == goal:
-            return [start]
-
-        from collections import deque
-
-        visited = set()
-        queue = deque([[start]])  # each item is a path list
-
-        while queue:
-            path = queue.popleft()
-            node = path[-1]
-
-            if node == goal:
-                return path
-
-            if node in visited:
-                continue
-
-            visited.add(node)
-
-            for neighbor in self.sectors[node].neighbors:
-                if neighbor not in visited:
-                    new_path = list(path)
-                    new_path.append(neighbor)
-                    queue.append(new_path)
-
-        return None
 
     @staticmethod
-    def from_dict(data):
-        g = Galaxy(data["num_sectors"])
+    def from_dict(data: Dict[str, Any]) -> "Galaxy":
+        """
+        Restore galaxy from saved data.
+        
+        Args:
+            data: Saved galaxy data dictionary
+            
+        Returns:
+            Restored Galaxy instance
+        """
+        if not isinstance(data, dict):
+            raise ValueError("Galaxy data must be a dictionary")
+        
+        # Backward compatibility — infer size if missing
+        if "size" in data:
+            size = data["size"]
+        else:
+            # Infer from sectors
+            sectors_data = data.get("sectors", {})
+            if sectors_data:
+                size = max(int(x) for x in sectors_data.keys())
+            else:
+                size = 200  # Default fallback
 
-        # overwrite generated map with saved map data
-        for sid, info in data["sectors"].items():
-            sid = int(sid)
-            sec = g.sectors[sid]
+        # Create fresh galaxy structure
+        g = Galaxy(size=size)
 
-            sec.neighbors = set(info["neighbors"])
-            sec.type = info["type"]
-            sec.has_pirates = info.get("has_pirates", sec.type == "PIRATE")
+        # Restore sector data
+        sectors_data = data.get("sectors", {})
 
-            if info["port"]:
-                sec.port = Port.from_dict(info["port"])
-
-            if info["planet"]:
-                sec.planet = Planet.from_dict(info["planet"])
+        for sid, sec_data in sectors_data.items():
+            try:
+                sid_int = int(sid)
+                if sid_int in g.sectors:
+                    Sector.from_dict(sec_data, g.sectors[sid_int])
+            except (ValueError, TypeError) as e:
+                print(f"[WARNING] Failed to load sector {sid}: {e}")
+                continue
 
         return g
+
+    # ------------------------------------------------------------
+    # Navigation helpers
+    # ------------------------------------------------------------
+
+    def sector_exists(self, sid: int) -> bool:
+        """
+        Check if a sector exists in the galaxy.
+        
+        Args:
+            sid: Sector ID to check
+            
+        Returns:
+            True if sector exists
+        """
+        return sid in self.sectors
+
+    def is_adjacent(self, src: int, dst: int) -> bool:
+        """
+        Check if two sectors are connected by a warp route.
+        
+        Args:
+            src: Source sector ID
+            dst: Destination sector ID
+            
+        Returns:
+            True if sectors are adjacent (warp connection exists)
+        """
+        if src not in self.sectors:
+            return False
+        return dst in self.sectors[src].neighbors
+
+    def get_sector(self, sid: int) -> Optional[Sector]:
+        """
+        Get sector object by ID.
+        
+        Args:
+            sid: Sector ID
+            
+        Returns:
+            Sector object or None if not found
+        """
+        return self.sectors.get(sid)
+
+    # ------------------------------------------------------------
+    # Client serialization (limited info)
+    # ------------------------------------------------------------
+
+    def serialize_sector(self, sid: int) -> Dict[str, Any]:
+        """
+        Serialize sector data for client transmission.
+        
+        Only includes information that should be visible to the client,
+        hiding internal details like exact port inventory levels.
+        
+        Args:
+            sid: Sector ID to serialize
+            
+        Returns:
+            Dictionary with client-visible sector information
+        """
+        if sid not in self.sectors:
+            return {}
+
+        s = self.sectors[sid]
+
+        return {
+            "id": s.id,
+            "neighbors": s.neighbors,
+            "has_port": s.port is not None,
+            "has_planet": s.planet is not None,
+            "stardock": s.is_stardock,
+            "port_name": s.port.name if s.port else None,
+        }
+
+    # ------------------------------------------------------------
+    # Statistics and debugging
+    # ------------------------------------------------------------
+
+    def get_statistics(self) -> Dict[str, Any]:
+        """
+        Get galaxy statistics for debugging and admin tools.
+        
+        Returns:
+            Dictionary containing galaxy metrics
+        """
+        port_count = sum(1 for s in self.sectors.values() if s.port is not None)
+        stardock_count = sum(1 for s in self.sectors.values() if s.is_stardock)
+        planet_count = sum(1 for s in self.sectors.values() if s.planet is not None)
+        
+        # Calculate average connections
+        total_connections = sum(len(s.neighbors) for s in self.sectors.values())
+        avg_connections = total_connections / len(self.sectors) if self.sectors else 0
+
+        return {
+            "size": self.size,
+            "ports": port_count,
+            "stardocks": stardock_count,
+            "planets": planet_count,
+            "avg_warp_routes": round(avg_connections, 2),
+        }
