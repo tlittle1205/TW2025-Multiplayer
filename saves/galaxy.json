@@ -1,0 +1,4005 @@
+{
+  "num_sectors": 200,
+  "sectors": {
+    "1": {
+      "id": 1,
+      "neighbors": [
+        200,
+        2,
+        151
+      ],
+      "type": "FEDSPACE",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 1,
+        "name": "Planet-1"
+      }
+    },
+    "2": {
+      "id": 2,
+      "neighbors": [
+        1,
+        3,
+        59
+      ],
+      "type": "FEDSPACE",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 2,
+        "name": "Planet-2"
+      }
+    },
+    "3": {
+      "id": 3,
+      "neighbors": [
+        81,
+        2,
+        4
+      ],
+      "type": "STARDOCK",
+      "has_pirates": false,
+      "port": null,
+      "planet": null
+    },
+    "4": {
+      "id": 4,
+      "neighbors": [
+        3,
+        5
+      ],
+      "type": "FEDSPACE",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 4,
+        "name": "Planet-4"
+      }
+    },
+    "5": {
+      "id": 5,
+      "neighbors": [
+        4,
+        6
+      ],
+      "type": "FEDSPACE",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 5,
+        "name": "Planet-5"
+      }
+    },
+    "6": {
+      "id": 6,
+      "neighbors": [
+        16,
+        5,
+        7
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 6,
+        "name": "Planet-6"
+      }
+    },
+    "7": {
+      "id": 7,
+      "neighbors": [
+        8,
+        16,
+        6
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 7,
+        "name": "Planet-7"
+      }
+    },
+    "8": {
+      "id": 8,
+      "neighbors": [
+        9,
+        11,
+        7
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 8,
+        "name": "Planet-8"
+      }
+    },
+    "9": {
+      "id": 9,
+      "neighbors": [
+        8,
+        10
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "10": {
+      "id": 10,
+      "neighbors": [
+        73,
+        11,
+        9
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 10,
+        "name": "Planet-10"
+      }
+    },
+    "11": {
+      "id": 11,
+      "neighbors": [
+        8,
+        10,
+        12
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 11,
+        "name": "Planet-11"
+      }
+    },
+    "12": {
+      "id": 12,
+      "neighbors": [
+        11,
+        13
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 12,
+        "name": "Planet-12"
+      }
+    },
+    "13": {
+      "id": 13,
+      "neighbors": [
+        12,
+        14
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 13,
+        "name": "Planet-13"
+      }
+    },
+    "14": {
+      "id": 14,
+      "neighbors": [
+        109,
+        13,
+        15
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 14,
+        "name": "Planet-14"
+      }
+    },
+    "15": {
+      "id": 15,
+      "neighbors": [
+        16,
+        14
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 15,
+        "name": "Planet-15"
+      }
+    },
+    "16": {
+      "id": 16,
+      "neighbors": [
+        17,
+        7,
+        6,
+        15
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 16,
+        "name": "Planet-16"
+      }
+    },
+    "17": {
+      "id": 17,
+      "neighbors": [
+        16,
+        18
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 17,
+        "name": "Planet-17"
+      }
+    },
+    "18": {
+      "id": 18,
+      "neighbors": [
+        177,
+        19,
+        17
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 18,
+        "name": "Planet-18"
+      }
+    },
+    "19": {
+      "id": 19,
+      "neighbors": [
+        176,
+        18,
+        20
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 19,
+        "name": "Planet-19"
+      }
+    },
+    "20": {
+      "id": 20,
+      "neighbors": [
+        19,
+        21
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 20,
+        "name": "Planet-20"
+      }
+    },
+    "21": {
+      "id": 21,
+      "neighbors": [
+        20,
+        22
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 21,
+        "name": "Planet-21"
+      }
+    },
+    "22": {
+      "id": 22,
+      "neighbors": [
+        21,
+        23
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 22,
+        "name": "Planet-22"
+      }
+    },
+    "23": {
+      "id": 23,
+      "neighbors": [
+        24,
+        22
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 23,
+        "name": "Planet-23"
+      }
+    },
+    "24": {
+      "id": 24,
+      "neighbors": [
+        25,
+        23
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 24,
+        "name": "Planet-24"
+      }
+    },
+    "25": {
+      "id": 25,
+      "neighbors": [
+        24,
+        26
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 25,
+        "name": "Planet-25"
+      }
+    },
+    "26": {
+      "id": 26,
+      "neighbors": [
+        25,
+        34,
+        27
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 26,
+        "name": "Planet-26"
+      }
+    },
+    "27": {
+      "id": 27,
+      "neighbors": [
+        26,
+        172,
+        28
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 27,
+        "name": "Planet-27"
+      }
+    },
+    "28": {
+      "id": 28,
+      "neighbors": [
+        27,
+        29
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 28,
+        "name": "Planet-28"
+      }
+    },
+    "29": {
+      "id": 29,
+      "neighbors": [
+        113,
+        28,
+        30
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 29,
+        "name": "Planet-29"
+      }
+    },
+    "30": {
+      "id": 30,
+      "neighbors": [
+        29,
+        31
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 30,
+        "name": "Planet-30"
+      }
+    },
+    "31": {
+      "id": 31,
+      "neighbors": [
+        32,
+        146,
+        30
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 31,
+        "name": "Planet-31"
+      }
+    },
+    "32": {
+      "id": 32,
+      "neighbors": [
+        33,
+        31
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 32,
+        "name": "Planet-32"
+      }
+    },
+    "33": {
+      "id": 33,
+      "neighbors": [
+        32,
+        34
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 33,
+        "name": "Planet-33"
+      }
+    },
+    "34": {
+      "id": 34,
+      "neighbors": [
+        33,
+        26,
+        35,
+        37
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 34,
+        "name": "Planet-34"
+      }
+    },
+    "35": {
+      "id": 35,
+      "neighbors": [
+        34,
+        36
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 35,
+        "name": "Planet-35"
+      }
+    },
+    "36": {
+      "id": 36,
+      "neighbors": [
+        109,
+        35,
+        37
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "37": {
+      "id": 37,
+      "neighbors": [
+        34,
+        36,
+        38,
+        82,
+        116
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 37,
+        "name": "Planet-37"
+      }
+    },
+    "38": {
+      "id": 38,
+      "neighbors": [
+        37,
+        39
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 38,
+        "name": "Planet-38"
+      }
+    },
+    "39": {
+      "id": 39,
+      "neighbors": [
+        40,
+        38
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 39,
+        "name": "Planet-39"
+      }
+    },
+    "40": {
+      "id": 40,
+      "neighbors": [
+        41,
+        39
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 40,
+        "name": "Planet-40"
+      }
+    },
+    "41": {
+      "id": 41,
+      "neighbors": [
+        40,
+        42,
+        95
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 41,
+        "name": "Planet-41"
+      }
+    },
+    "42": {
+      "id": 42,
+      "neighbors": [
+        41,
+        43
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 42,
+        "name": "Planet-42"
+      }
+    },
+    "43": {
+      "id": 43,
+      "neighbors": [
+        42,
+        44
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 43,
+        "name": "Planet-43"
+      }
+    },
+    "44": {
+      "id": 44,
+      "neighbors": [
+        64,
+        43,
+        45
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "45": {
+      "id": 45,
+      "neighbors": [
+        44,
+        46
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 45,
+        "name": "Planet-45"
+      }
+    },
+    "46": {
+      "id": 46,
+      "neighbors": [
+        45,
+        47
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 46,
+        "name": "Planet-46"
+      }
+    },
+    "47": {
+      "id": 47,
+      "neighbors": [
+        48,
+        46
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 47,
+        "name": "Planet-47"
+      }
+    },
+    "48": {
+      "id": 48,
+      "neighbors": [
+        104,
+        49,
+        198,
+        47
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 48,
+        "name": "Planet-48"
+      }
+    },
+    "49": {
+      "id": 49,
+      "neighbors": [
+        48,
+        50
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 49,
+        "name": "Planet-49"
+      }
+    },
+    "50": {
+      "id": 50,
+      "neighbors": [
+        49,
+        51
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 50,
+        "name": "Planet-50"
+      }
+    },
+    "51": {
+      "id": 51,
+      "neighbors": [
+        50,
+        52
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 51,
+        "name": "Planet-51"
+      }
+    },
+    "52": {
+      "id": 52,
+      "neighbors": [
+        51,
+        53
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 52,
+        "name": "Planet-52"
+      }
+    },
+    "53": {
+      "id": 53,
+      "neighbors": [
+        52,
+        54
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 53,
+        "name": "Planet-53"
+      }
+    },
+    "54": {
+      "id": 54,
+      "neighbors": [
+        53,
+        55
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 54,
+        "name": "Planet-54"
+      }
+    },
+    "55": {
+      "id": 55,
+      "neighbors": [
+        56,
+        77,
+        54
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 55,
+        "name": "Planet-55"
+      }
+    },
+    "56": {
+      "id": 56,
+      "neighbors": [
+        57,
+        55
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 56,
+        "name": "Planet-56"
+      }
+    },
+    "57": {
+      "id": 57,
+      "neighbors": [
+        56,
+        58
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "58": {
+      "id": 58,
+      "neighbors": [
+        57,
+        59,
+        181,
+        158
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 58,
+        "name": "Planet-58"
+      }
+    },
+    "59": {
+      "id": 59,
+      "neighbors": [
+        58,
+        2,
+        60
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "60": {
+      "id": 60,
+      "neighbors": [
+        121,
+        59,
+        61
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "61": {
+      "id": 61,
+      "neighbors": [
+        60,
+        62
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 61,
+        "name": "Planet-61"
+      }
+    },
+    "62": {
+      "id": 62,
+      "neighbors": [
+        61,
+        63
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 62,
+        "name": "Planet-62"
+      }
+    },
+    "63": {
+      "id": 63,
+      "neighbors": [
+        64,
+        62
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 63,
+        "name": "Planet-63"
+      }
+    },
+    "64": {
+      "id": 64,
+      "neighbors": [
+        65,
+        44,
+        63
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 64,
+        "name": "Planet-64"
+      }
+    },
+    "65": {
+      "id": 65,
+      "neighbors": [
+        64,
+        66
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 65,
+        "name": "Planet-65"
+      }
+    },
+    "66": {
+      "id": 66,
+      "neighbors": [
+        65,
+        67
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 66,
+        "name": "Planet-66"
+      }
+    },
+    "67": {
+      "id": 67,
+      "neighbors": [
+        66,
+        68
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 67,
+        "name": "Planet-67"
+      }
+    },
+    "68": {
+      "id": 68,
+      "neighbors": [
+        67,
+        69
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "69": {
+      "id": 69,
+      "neighbors": [
+        68,
+        70
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 69,
+        "name": "Planet-69"
+      }
+    },
+    "70": {
+      "id": 70,
+      "neighbors": [
+        69,
+        71
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 70,
+        "name": "Planet-70"
+      }
+    },
+    "71": {
+      "id": 71,
+      "neighbors": [
+        72,
+        70
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "72": {
+      "id": 72,
+      "neighbors": [
+        73,
+        71
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 72,
+        "name": "Planet-72"
+      }
+    },
+    "73": {
+      "id": 73,
+      "neighbors": [
+        72,
+        74,
+        10,
+        198
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 73,
+        "name": "Planet-73"
+      }
+    },
+    "74": {
+      "id": 74,
+      "neighbors": [
+        73,
+        75
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 74,
+        "name": "Planet-74"
+      }
+    },
+    "75": {
+      "id": 75,
+      "neighbors": [
+        74,
+        76
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 75,
+        "name": "Planet-75"
+      }
+    },
+    "76": {
+      "id": 76,
+      "neighbors": [
+        75,
+        77
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 76,
+        "name": "Planet-76"
+      }
+    },
+    "77": {
+      "id": 77,
+      "neighbors": [
+        76,
+        78,
+        55
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 77,
+        "name": "Planet-77"
+      }
+    },
+    "78": {
+      "id": 78,
+      "neighbors": [
+        77,
+        79
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 78,
+        "name": "Planet-78"
+      }
+    },
+    "79": {
+      "id": 79,
+      "neighbors": [
+        80,
+        78
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "80": {
+      "id": 80,
+      "neighbors": [
+        81,
+        79
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 80,
+        "name": "Planet-80"
+      }
+    },
+    "81": {
+      "id": 81,
+      "neighbors": [
+        80,
+        82,
+        3,
+        154
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 81,
+        "name": "Planet-81"
+      }
+    },
+    "82": {
+      "id": 82,
+      "neighbors": [
+        81,
+        83,
+        37
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "83": {
+      "id": 83,
+      "neighbors": [
+        82,
+        84
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 83,
+        "name": "Planet-83"
+      }
+    },
+    "84": {
+      "id": 84,
+      "neighbors": [
+        83,
+        85
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 84,
+        "name": "Planet-84"
+      }
+    },
+    "85": {
+      "id": 85,
+      "neighbors": [
+        84,
+        86
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 85,
+        "name": "Planet-85"
+      }
+    },
+    "86": {
+      "id": 86,
+      "neighbors": [
+        85,
+        87
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 86,
+        "name": "Planet-86"
+      }
+    },
+    "87": {
+      "id": 87,
+      "neighbors": [
+        88,
+        86
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 87,
+        "name": "Planet-87"
+      }
+    },
+    "88": {
+      "id": 88,
+      "neighbors": [
+        89,
+        87
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 88,
+        "name": "Planet-88"
+      }
+    },
+    "89": {
+      "id": 89,
+      "neighbors": [
+        88,
+        90
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 89,
+        "name": "Planet-89"
+      }
+    },
+    "90": {
+      "id": 90,
+      "neighbors": [
+        89,
+        91
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 90,
+        "name": "Planet-90"
+      }
+    },
+    "91": {
+      "id": 91,
+      "neighbors": [
+        90,
+        92
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 91,
+        "name": "Planet-91"
+      }
+    },
+    "92": {
+      "id": 92,
+      "neighbors": [
+        91,
+        93
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 92,
+        "name": "Planet-92"
+      }
+    },
+    "93": {
+      "id": 93,
+      "neighbors": [
+        92,
+        94
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 93,
+        "name": "Planet-93"
+      }
+    },
+    "94": {
+      "id": 94,
+      "neighbors": [
+        93,
+        95
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 94,
+        "name": "Planet-94"
+      }
+    },
+    "95": {
+      "id": 95,
+      "neighbors": [
+        96,
+        41,
+        94
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 95,
+        "name": "Planet-95"
+      }
+    },
+    "96": {
+      "id": 96,
+      "neighbors": [
+        97,
+        95
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "97": {
+      "id": 97,
+      "neighbors": [
+        96,
+        98
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 97,
+        "name": "Planet-97"
+      }
+    },
+    "98": {
+      "id": 98,
+      "neighbors": [
+        97,
+        99
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 98,
+        "name": "Planet-98"
+      }
+    },
+    "99": {
+      "id": 99,
+      "neighbors": [
+        98,
+        100
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 99,
+        "name": "Planet-99"
+      }
+    },
+    "100": {
+      "id": 100,
+      "neighbors": [
+        99,
+        101
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 100,
+        "name": "Planet-100"
+      }
+    },
+    "101": {
+      "id": 101,
+      "neighbors": [
+        100,
+        102
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 101,
+        "name": "Planet-101"
+      }
+    },
+    "102": {
+      "id": 102,
+      "neighbors": [
+        101,
+        103
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 102,
+        "name": "Planet-102"
+      }
+    },
+    "103": {
+      "id": 103,
+      "neighbors": [
+        104,
+        102
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 103,
+        "name": "Planet-103"
+      }
+    },
+    "104": {
+      "id": 104,
+      "neighbors": [
+        48,
+        105,
+        103
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 104,
+        "name": "Planet-104"
+      }
+    },
+    "105": {
+      "id": 105,
+      "neighbors": [
+        104,
+        162,
+        118,
+        106
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 105,
+        "name": "Planet-105"
+      }
+    },
+    "106": {
+      "id": 106,
+      "neighbors": [
+        105,
+        107
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 106,
+        "name": "Planet-106"
+      }
+    },
+    "107": {
+      "id": 107,
+      "neighbors": [
+        106,
+        108
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 107,
+        "name": "Planet-107"
+      }
+    },
+    "108": {
+      "id": 108,
+      "neighbors": [
+        107,
+        109
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "109": {
+      "id": 109,
+      "neighbors": [
+        108,
+        36,
+        110,
+        14
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 109,
+        "name": "Planet-109"
+      }
+    },
+    "110": {
+      "id": 110,
+      "neighbors": [
+        109,
+        111
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 110,
+        "name": "Planet-110"
+      }
+    },
+    "111": {
+      "id": 111,
+      "neighbors": [
+        112,
+        110
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 111,
+        "name": "Planet-111"
+      }
+    },
+    "112": {
+      "id": 112,
+      "neighbors": [
+        113,
+        111
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "113": {
+      "id": 113,
+      "neighbors": [
+        112,
+        114,
+        29
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 113,
+        "name": "Planet-113"
+      }
+    },
+    "114": {
+      "id": 114,
+      "neighbors": [
+        113,
+        115
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 114,
+        "name": "Planet-114"
+      }
+    },
+    "115": {
+      "id": 115,
+      "neighbors": [
+        114,
+        116
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 115,
+        "name": "Planet-115"
+      }
+    },
+    "116": {
+      "id": 116,
+      "neighbors": [
+        37,
+        115,
+        117
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 116,
+        "name": "Planet-116"
+      }
+    },
+    "117": {
+      "id": 117,
+      "neighbors": [
+        116,
+        118
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 117,
+        "name": "Planet-117"
+      }
+    },
+    "118": {
+      "id": 118,
+      "neighbors": [
+        105,
+        117,
+        119
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 118,
+        "name": "Planet-118"
+      }
+    },
+    "119": {
+      "id": 119,
+      "neighbors": [
+        120,
+        118
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 119,
+        "name": "Planet-119"
+      }
+    },
+    "120": {
+      "id": 120,
+      "neighbors": [
+        121,
+        119
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "121": {
+      "id": 121,
+      "neighbors": [
+        120,
+        122,
+        156,
+        60
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 121,
+        "name": "Planet-121"
+      }
+    },
+    "122": {
+      "id": 122,
+      "neighbors": [
+        121,
+        123
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 122,
+        "name": "Planet-122"
+      }
+    },
+    "123": {
+      "id": 123,
+      "neighbors": [
+        122,
+        124
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "124": {
+      "id": 124,
+      "neighbors": [
+        123,
+        125
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 124,
+        "name": "Planet-124"
+      }
+    },
+    "125": {
+      "id": 125,
+      "neighbors": [
+        124,
+        126
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 125,
+        "name": "Planet-125"
+      }
+    },
+    "126": {
+      "id": 126,
+      "neighbors": [
+        125,
+        127
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 126,
+        "name": "Planet-126"
+      }
+    },
+    "127": {
+      "id": 127,
+      "neighbors": [
+        128,
+        126
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 127,
+        "name": "Planet-127"
+      }
+    },
+    "128": {
+      "id": 128,
+      "neighbors": [
+        151,
+        129,
+        127
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 128,
+        "name": "Planet-128"
+      }
+    },
+    "129": {
+      "id": 129,
+      "neighbors": [
+        128,
+        130
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 129,
+        "name": "Planet-129"
+      }
+    },
+    "130": {
+      "id": 130,
+      "neighbors": [
+        129,
+        131
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 130,
+        "name": "Planet-130"
+      }
+    },
+    "131": {
+      "id": 131,
+      "neighbors": [
+        130,
+        132
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 131,
+        "name": "Planet-131"
+      }
+    },
+    "132": {
+      "id": 132,
+      "neighbors": [
+        131,
+        133
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 132,
+        "name": "Planet-132"
+      }
+    },
+    "133": {
+      "id": 133,
+      "neighbors": [
+        132,
+        134
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 133,
+        "name": "Planet-133"
+      }
+    },
+    "134": {
+      "id": 134,
+      "neighbors": [
+        133,
+        135
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 134,
+        "name": "Planet-134"
+      }
+    },
+    "135": {
+      "id": 135,
+      "neighbors": [
+        136,
+        134
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 135,
+        "name": "Planet-135"
+      }
+    },
+    "136": {
+      "id": 136,
+      "neighbors": [
+        137,
+        135
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 136,
+        "name": "Planet-136"
+      }
+    },
+    "137": {
+      "id": 137,
+      "neighbors": [
+        136,
+        138
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 137,
+        "name": "Planet-137"
+      }
+    },
+    "138": {
+      "id": 138,
+      "neighbors": [
+        137,
+        139
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 138,
+        "name": "Planet-138"
+      }
+    },
+    "139": {
+      "id": 139,
+      "neighbors": [
+        138,
+        140
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 139,
+        "name": "Planet-139"
+      }
+    },
+    "140": {
+      "id": 140,
+      "neighbors": [
+        139,
+        141
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 140,
+        "name": "Planet-140"
+      }
+    },
+    "141": {
+      "id": 141,
+      "neighbors": [
+        140,
+        142
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 141,
+        "name": "Planet-141"
+      }
+    },
+    "142": {
+      "id": 142,
+      "neighbors": [
+        141,
+        143
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 142,
+        "name": "Planet-142"
+      }
+    },
+    "143": {
+      "id": 143,
+      "neighbors": [
+        144,
+        142
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 143,
+        "name": "Planet-143"
+      }
+    },
+    "144": {
+      "id": 144,
+      "neighbors": [
+        145,
+        143
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 144,
+        "name": "Planet-144"
+      }
+    },
+    "145": {
+      "id": 145,
+      "neighbors": [
+        144,
+        146
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 145,
+        "name": "Planet-145"
+      }
+    },
+    "146": {
+      "id": 146,
+      "neighbors": [
+        145,
+        147,
+        31
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 146,
+        "name": "Planet-146"
+      }
+    },
+    "147": {
+      "id": 147,
+      "neighbors": [
+        146,
+        148
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 147,
+        "name": "Planet-147"
+      }
+    },
+    "148": {
+      "id": 148,
+      "neighbors": [
+        147,
+        149
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 148,
+        "name": "Planet-148"
+      }
+    },
+    "149": {
+      "id": 149,
+      "neighbors": [
+        148,
+        150
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 149,
+        "name": "Planet-149"
+      }
+    },
+    "150": {
+      "id": 150,
+      "neighbors": [
+        149,
+        151
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 150,
+        "name": "Planet-150"
+      }
+    },
+    "151": {
+      "id": 151,
+      "neighbors": [
+        152,
+        1,
+        128,
+        150
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 151,
+        "name": "Planet-151"
+      }
+    },
+    "152": {
+      "id": 152,
+      "neighbors": [
+        153,
+        151
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 152,
+        "name": "Planet-152"
+      }
+    },
+    "153": {
+      "id": 153,
+      "neighbors": [
+        152,
+        154
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 153,
+        "name": "Planet-153"
+      }
+    },
+    "154": {
+      "id": 154,
+      "neighbors": [
+        81,
+        153,
+        155
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 154,
+        "name": "Planet-154"
+      }
+    },
+    "155": {
+      "id": 155,
+      "neighbors": [
+        154,
+        156
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 155,
+        "name": "Planet-155"
+      }
+    },
+    "156": {
+      "id": 156,
+      "neighbors": [
+        121,
+        155,
+        157
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 156,
+        "name": "Planet-156"
+      }
+    },
+    "157": {
+      "id": 157,
+      "neighbors": [
+        156,
+        158
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 157,
+        "name": "Planet-157"
+      }
+    },
+    "158": {
+      "id": 158,
+      "neighbors": [
+        58,
+        157,
+        159
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 158,
+        "name": "Planet-158"
+      }
+    },
+    "159": {
+      "id": 159,
+      "neighbors": [
+        160,
+        158
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "160": {
+      "id": 160,
+      "neighbors": [
+        161,
+        186,
+        159
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 160,
+        "name": "Planet-160"
+      }
+    },
+    "161": {
+      "id": 161,
+      "neighbors": [
+        160,
+        162
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 161,
+        "name": "Planet-161"
+      }
+    },
+    "162": {
+      "id": 162,
+      "neighbors": [
+        161,
+        163,
+        105
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 162,
+        "name": "Planet-162"
+      }
+    },
+    "163": {
+      "id": 163,
+      "neighbors": [
+        162,
+        164
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 163,
+        "name": "Planet-163"
+      }
+    },
+    "164": {
+      "id": 164,
+      "neighbors": [
+        163,
+        165
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 164,
+        "name": "Planet-164"
+      }
+    },
+    "165": {
+      "id": 165,
+      "neighbors": [
+        164,
+        166
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 165,
+        "name": "Planet-165"
+      }
+    },
+    "166": {
+      "id": 166,
+      "neighbors": [
+        165,
+        167
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 166,
+        "name": "Planet-166"
+      }
+    },
+    "167": {
+      "id": 167,
+      "neighbors": [
+        168,
+        166
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 167,
+        "name": "Planet-167"
+      }
+    },
+    "168": {
+      "id": 168,
+      "neighbors": [
+        169,
+        167
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 168,
+        "name": "Planet-168"
+      }
+    },
+    "169": {
+      "id": 169,
+      "neighbors": [
+        168,
+        170
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 169,
+        "name": "Planet-169"
+      }
+    },
+    "170": {
+      "id": 170,
+      "neighbors": [
+        169,
+        171
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 170,
+        "name": "Planet-170"
+      }
+    },
+    "171": {
+      "id": 171,
+      "neighbors": [
+        170,
+        172
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 171,
+        "name": "Planet-171"
+      }
+    },
+    "172": {
+      "id": 172,
+      "neighbors": [
+        27,
+        171,
+        173
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 172,
+        "name": "Planet-172"
+      }
+    },
+    "173": {
+      "id": 173,
+      "neighbors": [
+        172,
+        174
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 173,
+        "name": "Planet-173"
+      }
+    },
+    "174": {
+      "id": 174,
+      "neighbors": [
+        173,
+        175
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 174,
+        "name": "Planet-174"
+      }
+    },
+    "175": {
+      "id": 175,
+      "neighbors": [
+        176,
+        174
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 175,
+        "name": "Planet-175"
+      }
+    },
+    "176": {
+      "id": 176,
+      "neighbors": [
+        177,
+        19,
+        175
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "177": {
+      "id": 177,
+      "neighbors": [
+        176,
+        178,
+        18
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 177,
+        "name": "Planet-177"
+      }
+    },
+    "178": {
+      "id": 178,
+      "neighbors": [
+        177,
+        179
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 178,
+        "name": "Planet-178"
+      }
+    },
+    "179": {
+      "id": 179,
+      "neighbors": [
+        178,
+        180
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 179,
+        "name": "Planet-179"
+      }
+    },
+    "180": {
+      "id": 180,
+      "neighbors": [
+        179,
+        181
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 180,
+        "name": "Planet-180"
+      }
+    },
+    "181": {
+      "id": 181,
+      "neighbors": [
+        58,
+        180,
+        182
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 181,
+        "name": "Planet-181"
+      }
+    },
+    "182": {
+      "id": 182,
+      "neighbors": [
+        181,
+        183
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 182,
+        "name": "Planet-182"
+      }
+    },
+    "183": {
+      "id": 183,
+      "neighbors": [
+        184,
+        182
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 183,
+        "name": "Planet-183"
+      }
+    },
+    "184": {
+      "id": 184,
+      "neighbors": [
+        185,
+        183
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 184,
+        "name": "Planet-184"
+      }
+    },
+    "185": {
+      "id": 185,
+      "neighbors": [
+        184,
+        186
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 185,
+        "name": "Planet-185"
+      }
+    },
+    "186": {
+      "id": 186,
+      "neighbors": [
+        160,
+        185,
+        187
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 186,
+        "name": "Planet-186"
+      }
+    },
+    "187": {
+      "id": 187,
+      "neighbors": [
+        186,
+        188
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 187,
+        "name": "Planet-187"
+      }
+    },
+    "188": {
+      "id": 188,
+      "neighbors": [
+        187,
+        189
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 188,
+        "name": "Planet-188"
+      }
+    },
+    "189": {
+      "id": 189,
+      "neighbors": [
+        188,
+        190
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 189,
+        "name": "Planet-189"
+      }
+    },
+    "190": {
+      "id": 190,
+      "neighbors": [
+        189,
+        191
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 190,
+        "name": "Planet-190"
+      }
+    },
+    "191": {
+      "id": 191,
+      "neighbors": [
+        192,
+        190
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 191,
+        "name": "Planet-191"
+      }
+    },
+    "192": {
+      "id": 192,
+      "neighbors": [
+        193,
+        191
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "193": {
+      "id": 193,
+      "neighbors": [
+        192,
+        194
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": null
+    },
+    "194": {
+      "id": 194,
+      "neighbors": [
+        193,
+        195
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 194,
+        "name": "Planet-194"
+      }
+    },
+    "195": {
+      "id": 195,
+      "neighbors": [
+        194,
+        196
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 195,
+        "name": "Planet-195"
+      }
+    },
+    "196": {
+      "id": 196,
+      "neighbors": [
+        195,
+        197
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 196,
+        "name": "Planet-196"
+      }
+    },
+    "197": {
+      "id": 197,
+      "neighbors": [
+        196,
+        198
+      ],
+      "type": "PIRATE",
+      "has_pirates": true,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 197,
+        "name": "Planet-197"
+      }
+    },
+    "198": {
+      "id": 198,
+      "neighbors": [
+        48,
+        73,
+        197,
+        199
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 198,
+        "name": "Planet-198"
+      }
+    },
+    "199": {
+      "id": 199,
+      "neighbors": [
+        200,
+        198
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 199,
+        "name": "Planet-199"
+      }
+    },
+    "200": {
+      "id": 200,
+      "neighbors": [
+        1,
+        199
+      ],
+      "type": "NORMAL",
+      "has_pirates": false,
+      "port": {
+        "prices": {
+          "fuel": 10,
+          "ore": 25,
+          "equipment": 50
+        }
+      },
+      "planet": {
+        "sector_id": 200,
+        "name": "Planet-200"
+      }
+    }
+  }
+}
